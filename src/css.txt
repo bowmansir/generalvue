@@ -1,0 +1,26 @@
+display: flex;
+
+水平
+flex-direction: row / row-reverse   column/ column-reverse
+子项目多行
+flex-wrap nowrap   wrap  wrap-reverse
+
+justify-content flex-start/flex-end  center  space-between space-around
+align-items stretch flex-start flex-end center baseline
+
+align-content center 多行对齐
+
+
+align-self auto flex-start flex-end  center stretch baseline 子要垂直对齐
+
+        if($request->hasFile('file') && $request->file('file')->isValid())
+        {
+
+        }
+//        php artisan storage:link
+//        $request->file->store('public/images');
+        $file_path = storage_path('app/').$path;
+        set_time_limit(-1);
+        dd($request->file('file'));
+
+        Storage::download('file.jpg');

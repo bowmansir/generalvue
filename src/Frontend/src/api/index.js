@@ -1,4 +1,5 @@
-import service from '@/utils/request';
+import request from '@/utils/request';
 
 
-export const Login = (url, params) => service.post(url, params);
+export const fetchLogin = (url, params) => request.post(url, params);
+export const fetchList = (url, params) => request.get(url, {params});

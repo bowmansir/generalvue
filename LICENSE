@@ -19,3 +19,85 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+php artisan vendor:publish --tag="cors"
+
+
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+composer create-project --prefer-dist laravel/laravel app "5.5.*"
+composer create-project --prefer-dist laravel/laravel blog "6.*"
+composer config -g -- disable-tls true
+
+extension_dir = "d:\Users\soft\php\ext"
+
+composer require tymon/jwt-auth
+
+ php artisan jwt:secret
+
+
+User extends Authenticatable implements JWTSubject
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
+
+        if(!$token = \Auth::guard('api')->attempt($credentials)) {
+            return \response()->json(['error' => 'authorized'], 401);
+        }
+        return response()->json([
+           'access_token' => $token,
+           'token_type' => 'Bearer',
+           'expires_in' => \Auth::guard('api')->factory()->getTTl() * 60
+        ])->setStatusCode(201);
+
+
+Route::namespace("Api")->group(function (){
+   Route::get("/index", "LoginController@index");
+   Route::middleware('auth:api')->group(function (){
+       Route::get("/index", "LoginController@index");
+   });
+});
+
+ php artisan vendor:publish --tag="cors"
+
+
+
+
+npm install -g @vue/cli-service-global
+
+vue create frontend
+
+Vue.use(ElementUI);
+import 'element-ui/lib/theme-chalk/index.css';
+
+main.js
+Vue.use(ElementUI)
+
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app')
+
+
+router:
+import Vue from 'vue'
+import Router from 'vue-router'
+
+
+Vue.use(Router)
+
+const routes = [
+    {path: '/login', component: () => import('@/views/login')},
+]
+
+const router = new Router({
+    routes
+})
+
+export default router;

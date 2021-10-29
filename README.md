@@ -13,9 +13,40 @@
 ```php
 <?php
 use GeneralCode\GeneralCode;
+````
 
 ## Advanced Usage
-
-
+### html.json
+```json
+{
+	"Print to console": {
+        "prefix": "vue",
+        "body": [
+            "<template>",
+            "    <div>\n",
+            "    </div>",
+            "</template>",
+            "<script>",
+            "export default {",
+            "   data() {",
+            "      return {",
+            "      }",
+            "   },",
+            "   created(){",
+            "   },",
+            "   computed:{",
+            "   },",
+            "   methods:{",
+            "   },",
+            "}",
+            "</script>",
+            "<style lang=\"scss\" scoped>\n",
+            "</style>",
+            "$2"
+        ],
+        "description": "Log output to console"
+    }
+}
+```
 ## License
 MIT
