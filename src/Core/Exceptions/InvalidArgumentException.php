@@ -1,9 +1,9 @@
 <?php
-namespace GeneralCode\Core\Exceptions;
+namespace GeneralVue\Core\Exceptions;
 
 /**
  * Class InvalidArgumentException
- * @package GeneralCode\Core\Exceptions
+ * @package GeneralVue\Core\Exceptions
  * @author bowser <s4p3r.code@gmail.com>
  */
 class InvalidArgumentException extends Exception

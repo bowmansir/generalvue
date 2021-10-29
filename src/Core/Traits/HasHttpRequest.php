@@ -1,5 +1,5 @@
 <?php
-namespace GeneralCode\Core\Traits;
+namespace GeneralVue\Core\Traits;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 
 /**
  * Trait HasHttpRequest
- * @package GeneralCode\Core\Traits
+ * @package GeneralVue\Core\Traits
  * @author bowser <s4p3r.code@gmail.com>
  */
 trait HasHttpRequest

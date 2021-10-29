@@ -1,27 +1,27 @@
 <?php
-namespace GeneralCode\Sign;
+namespace GeneralVue\Sign;
 
-use GeneralCode\GeneralCode;
+use GeneralVue\GeneralVue;
 
 /**
  * Class Sign
- * @package GeneralCode\Sign
+ * @package GeneralVue\Sign
  * @author bowser <s4p3r.code@gmail.com>
  */
 class Sign
 {
     /**
-     * @var GeneralCode
+     * @var GeneralVue
      */
-    private $GeneralCode;
+    private $GeneralVue;
 
     /**
      * Sign constructor.
-     * @param GeneralCode $GeneralCode
+     * @param GeneralVue $GeneralVue
      */
-    public function __construct(GeneralCode $GeneralCode)
+    public function __construct(GeneralVue $GeneralVue)
     {
-        $this->GeneralCode = $GeneralCode;
+        $this->GeneralVue = $GeneralVue;
     }
 
     /**
@@ -31,9 +31,9 @@ class Sign
     {
         $signArray = [];
 
-        if (! empty($this->GeneralCode['config']['secret'])) {
+        if (! empty($this->GeneralVue['config']['secret'])) {
             $timestamp = $this->getCurrentMillisecond();
-            $sign = $this->generate($timestamp, $this->GeneralCode['config']['secret']);
+            $sign = $this->generate($timestamp, $this->GeneralVue['config']['secret']);
 
             $signArray = [
                 'timestamp' => $timestamp,
@@ -73,7 +73,7 @@ class Sign
             return false;
         }
 
-        $signGenerated = $this->generate($timestamp, $this->GeneralCode['config']['app_secret']);
+        $signGenerated = $this->generate($timestamp, $this->GeneralVue['config']['app_secret']);
         if ($signGenerated !== $sign) {
             return false;
         }

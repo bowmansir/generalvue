@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\FeedCard;
+namespace GeneralVue\Message\FeedCard;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
  * Class ServiceProvider
- * @package GeneralCode\Message\FeedCard
+ * @package GeneralVue\Message\FeedCard
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ServiceProvider implements ServiceProviderInterface

@@ -1,10 +1,10 @@
 <?php
-namespace GeneralCode\Message;
+namespace GeneralVue\Message;
 
 use GuzzleHttp\Exception\GuzzleException;
-use GeneralCode\Core\ServiceContainer;
-use GeneralCode\Core\Traits\HasHttpRequest;
-use GeneralCode\GeneralCode;
+use GeneralVue\Core\ServiceContainer;
+use GeneralVue\Core\Traits\HasHttpRequest;
+use GeneralVue\GeneralVue;
 
 /**
  * @property Text\Text $text
@@ -17,7 +17,7 @@ use GeneralCode\GeneralCode;
  * @link https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq/d535db33
  *
  * Class Message
- * @package GeneralCode\Message
+ * @package GeneralVue\Message
  * @author bowser <s4p3r.code@gmail.com>
  */
 class Message extends ServiceContainer
@@ -36,17 +36,17 @@ class Message extends ServiceContainer
     ];
 
     /**
-     * @var GeneralCode
+     * @var GeneralVue
      */
-    private $GeneralCode;
+    private $GeneralVue;
 
     /**
      * Message constructor.
-     * @param GeneralCode $GeneralCode
+     * @param GeneralVue $GeneralVue
      */
-    public function __construct(GeneralCode $GeneralCode)
+    public function __construct(GeneralVue $GeneralVue)
     {
-        $this->GeneralCode = $GeneralCode;
+        $this->GeneralVue = $GeneralVue;
 
         parent::__construct();
     }
@@ -58,7 +58,7 @@ class Message extends ServiceContainer
      */
     public function send(array $content): array
     {
-        $this->setGuzzleOptions($this->GeneralCode['config']['guzzle_options']);
+        $this->setGuzzleOptions($this->GeneralVue['config']['guzzle_options']);
 
         $response = $this->request('post', $this->getUrl(), [
             'json' => $content,
@@ -72,10 +72,10 @@ class Message extends ServiceContainer
      */
     private function getUrl(): string
     {
-        $query = array_merge($this->GeneralCode->sign->getSignArray(), [
-            'access_token' => $this->GeneralCode['config']['access_token'],
+        $query = array_merge($this->GeneralVue->sign->getSignArray(), [
+            'access_token' => $this->GeneralVue['config']['access_token'],
         ]);
 
-        return $this->GeneralCode['config']['gateway'] . '?' . http_build_query($query);
+        return $this->GeneralVue['config']['gateway'] . '?' . http_build_query($query);
     }
 }

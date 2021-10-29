@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\ActionCard;
+namespace GeneralVue\Message\ActionCard;
 
-use GeneralCode\Core\AbstractContent;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Core\AbstractContent;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
 
 /**
  * Class ActionCard
- * @package GeneralCode\Message\ActionCard
+ * @package GeneralVue\Message\ActionCard
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ActionCard extends AbstractContent

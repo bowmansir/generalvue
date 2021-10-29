@@ -1,11 +1,11 @@
 <?php
-namespace GeneralCode\Core;
+namespace GeneralVue\Core;
 
 use Pimple\Container;
 
 /**
  * Class ServiceContainer
- * @package GeneralCode\Core
+ * @package GeneralVue\Core
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ServiceContainer extends Container

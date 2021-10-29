@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\Markdown;
+namespace GeneralVue\Message\Markdown;
 
-use GeneralCode\Core\AbstractContent;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Core\AbstractContent;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
 
 /**
  * Class Markdown
- * @package GeneralCode\Message\Markdown
+ * @package GeneralVue\Message\Markdown
  * @author bowser <s4p3r.code@gmail.com>
  */
 class Markdown extends AbstractContent

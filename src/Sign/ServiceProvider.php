@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Sign;
+namespace GeneralVue\Sign;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
  * Class ServiceProvider
- * @package GeneralCode\Sign
+ * @package GeneralVue\Sign
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ServiceProvider implements ServiceProviderInterface

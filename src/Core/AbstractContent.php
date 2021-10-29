@@ -1,14 +1,14 @@
 <?php
-namespace GeneralCode\Core;
+namespace GeneralVue\Core;
 
-use GeneralCode\Core\Contracts\ContentInterface;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
-use GeneralCode\Message\Message;
+use GeneralVue\Core\Contracts\ContentInterface;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Message\Message;
 use GuzzleHttp\Exception\GuzzleException;
 
 /**
  * Class AbstractContent
- * @package GeneralCode\Core
+ * @package GeneralVue\Core
  * @author bowser <s4p3r.code@gmail.com>
  */
 abstract class AbstractContent implements ContentInterface

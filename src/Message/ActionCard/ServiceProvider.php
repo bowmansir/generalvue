@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\ActionCard;
+namespace GeneralVue\Message\ActionCard;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
  * Class ServiceProvider
- * @package GeneralCode\Message\ActionCard
+ * @package GeneralVue\Message\ActionCard
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ServiceProvider implements ServiceProviderInterface

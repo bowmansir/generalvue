@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\Text;
+namespace GeneralVue\Message\Text;
 
-use GeneralCode\Core\AbstractContent;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Core\AbstractContent;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
 
 /**
  * Class Text
- * @package GeneralCode\Message\Text
+ * @package GeneralVue\Message\Text
  * @author bowser <s4p3r.code@gmail.com>
  */
 class Text extends AbstractContent

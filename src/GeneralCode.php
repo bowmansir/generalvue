@@ -1,18 +1,18 @@
 <?php
-namespace GeneralCode;
+namespace GeneralVue;
 
-use GeneralCode\Core\ServiceContainer;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Core\ServiceContainer;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
 
 /**
  * @property Sign\Sign $sign 签名服务
  * @property Message\Message $message 消息服务
  *
- * Class GeneralCode
- * @package GeneralCode
+ * Class GeneralVue
+ * @package GeneralVue
  * @author bowser <s4p3r.code@gmail.com>
  */
-class GeneralCode extends ServiceContainer
+class GeneralVue extends ServiceContainer
 {
     /**
      * @var array
@@ -34,7 +34,7 @@ class GeneralCode extends ServiceContainer
     ];
 
     /**
-     * GeneralCode constructor.
+     * GeneralVue constructor.
      * @param array $config
      * @throws InvalidArgumentException
      */
@@ -47,7 +47,7 @@ class GeneralCode extends ServiceContainer
 
     /**
      * @param array $config
-     * @return GeneralCode
+     * @return GeneralVue
      * @throws InvalidArgumentException
      */
     public function setConfig(array $config): self

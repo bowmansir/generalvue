@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\Link;
+namespace GeneralVue\Message\Link;
 
-use GeneralCode\Core\AbstractContent;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Core\AbstractContent;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
 
 /**
  * Class Link
- * @package GeneralCode\Message\Link
+ * @package GeneralVue\Message\Link
  * @author bowser <s4p3r.code@gmail.com>
  */
 class Link extends AbstractContent

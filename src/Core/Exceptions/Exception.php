@@ -1,9 +1,9 @@
 <?php
-namespace GeneralCode\Core\Exceptions;
+namespace GeneralVue\Core\Exceptions;
 
 /**
  * Class Exception
- * @package GeneralCode\Exceptions
+ * @package GeneralVue\Exceptions
  * @author bowser <s4p3r.code@gmail.com>
  */
 class Exception extends \Exception

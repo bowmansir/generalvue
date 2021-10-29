@@ -1,11 +1,11 @@
 <?php
-namespace GeneralCode\Core\Contracts;
+namespace GeneralVue\Core\Contracts;
 
-use GeneralCode\Message\Message;
+use GeneralVue\Message\Message;
 
 /**
  * Interface ContentInterface
- * @package GeneralCode\Core\Contracts
+ * @package GeneralVue\Core\Contracts
  * @author bowser <s4p3r.code@gmail.com>
  */
 interface ContentInterface

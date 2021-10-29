@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\FeedCard;
+namespace GeneralVue\Message\FeedCard;
 
-use GeneralCode\Core\AbstractContent;
-use GeneralCode\Core\Exceptions\InvalidArgumentException;
+use GeneralVue\Core\AbstractContent;
+use GeneralVue\Core\Exceptions\InvalidArgumentException;
 
 /**
  * Class FeedCard
- * @package GeneralCode\Message\FeedCard
+ * @package GeneralVue\Message\FeedCard
  * @author bowser <s4p3r.code@gmail.com>
  */
 class FeedCard extends AbstractContent

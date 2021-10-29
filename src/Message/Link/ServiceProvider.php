@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\Link;
+namespace GeneralVue\Message\Link;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
  * Class ServiceProvider
- * @package GeneralCode\Message\Link
+ * @package GeneralVue\Message\Link
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ServiceProvider implements ServiceProviderInterface

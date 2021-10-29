@@ -1,12 +1,12 @@
 <?php
-namespace GeneralCode\Message\Markdown;
+namespace GeneralVue\Message\Markdown;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
  * Class ServiceProvider
- * @package GeneralCode\Message\Markdown
+ * @package GeneralVue\Message\Markdown
  * @author bowser <s4p3r.code@gmail.com>
  */
 class ServiceProvider implements ServiceProviderInterface
