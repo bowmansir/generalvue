@@ -5,14 +5,14 @@
 - [Composer](https://getcomposer.org/)
 
 ## Installation
-`composer require bowmansir/generalcode ^1.0`
+`composer require bowmansir/GeneralVue ^1.0`
 
 ## Documents
 
 ## Usage
 ```php
 <?php
-use GeneralCode\GeneralCode;
+use GeneralVue\GeneralVue;
 ````
 
 ## Advanced Usage

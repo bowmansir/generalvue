@@ -1,6 +1,6 @@
 {
-  "name": "bowmansir/generalcode",
-  "description": "General Code",
+  "name": "bowmansir/generalvue",
+  "description": "General Vue",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "GeneralCode\\": "src/"
+      "GeneralVue\\": "src/"
     }
   }
 }
