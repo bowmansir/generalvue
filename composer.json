@@ -1,0 +1,22 @@
+{
+  "name": "bowmansir/generalcode",
+  "description": "General Code",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "superkeysir",
+      "email": "s4p3r.code@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "pimple/pimple": "^3.0",
+    "guzzlehttp/guzzle": "^6.5|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GeneralCode\\": "src/"
+    }
+  }
+}
